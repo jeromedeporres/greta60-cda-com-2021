@@ -38,6 +38,7 @@
         <?php
         // Imports
         include_once('inc/team.inc.php');
+        include_once('inc/functions.inc.php');
 
         // Parcourt le tableau TEAM
         $pattern =
@@ -51,7 +52,7 @@
             </div>';
         $html = '';
         foreach ($team as $member) {
-            $html .= sprintf($pattern, ($member['female'] ? 'girls' : 'boys'), $member['fname'], 20, $member['size']);
+            $html .= sprintf($pattern, ($member['female'] ? 'girls' : 'boys'), $member['fname'], age($member['dob'], date('Y-m-d')), $member['size']);
         }
         echo $html;
         ?>

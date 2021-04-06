@@ -9,4 +9,19 @@
 
 function age(string $date1, string $date2): int
 {
+    if ((bool) strtotime($date1) && (bool) strtotime($date2)) {
+        $d1 = strtotime($date1);
+        $d2 = strtotime($date2);
+        if ($d1 > $d2) {
+            $gap = $d1 - $d2;
+        } elseif ($d2 > $d1) {
+            $gap = $d2 - $d1;
+        } else {
+            $gap = 0;
+        }
+        return floor($gap / 60 / 60 / 24 / 365.25);
+    } else {
+        trigger_error('L\'un des deux paramètres n\'est pas une date.', E_USER_ERROR);
+        return false;
+    }
 }
