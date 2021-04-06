@@ -26,8 +26,8 @@
         <button class="btn btn-success" id="btnLogin">Se connecter</button>
     </div>
 
-    <section id="team">
-        <div class="card" style="width:15rem">
+    <section id="team" class="d-flex flex-wrap">
+        <div class="card m-3" style="width:15rem">
             <img src="pics/boys.jpg" alt="" class="card-img-top">
             <div class="card-body">
                 <h5 class="card-title">Lak</h5>
@@ -41,12 +41,12 @@
 
         // Parcourt le tableau TEAM
         $pattern =
-            '<div class="card" style="width:15rem">
+            '<div class="card m-3" style="width:15rem">
             <img src="pics/%s.jpg" alt="" class="card-img-top">
             <div class="card-body">
             <h5 class="card-title">%s</h5>
             <p><strong>Age : </strong>%d ans</p>
-            <p><strong>Taille : </strong>%dm</p>
+            <p><strong>Taille : </strong>%fm</p>
             </div>
             </div>';
         $html = '';
