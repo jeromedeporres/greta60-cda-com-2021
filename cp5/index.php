@@ -26,6 +26,19 @@
         <button class="btn btn-success" id="btnLogin">Se connecter</button>
     </div>
 
+    <section id="team">
+        <div class="card" style="width:15rem">
+            <img src="pics/boys.jpg" alt="" class="card-img-top">
+            <div class="card-body">
+                <h5 class="card-title">Lak</h5>
+                <p><strong>Age : </strong>55 ans</p>
+                <p><strong>Taille : </strong>1.70m</p>
+            </div>
+        </div>
+
+
+    </section>
+
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
 </body>
