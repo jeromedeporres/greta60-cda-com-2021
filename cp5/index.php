@@ -35,8 +35,26 @@
                 <p><strong>Taille : </strong>1.70m</p>
             </div>
         </div>
+        <?php
+        // Imports
+        include_once('inc/team.inc.php');
 
-
+        // Parcourt le tableau TEAM
+        $pattern =
+            '<div class="card" style="width:15rem">
+            <img src="pics/%s.jpg" alt="" class="card-img-top">
+            <div class="card-body">
+            <h5 class="card-title">%s</h5>
+            <p><strong>Age : </strong>%d ans</p>
+            <p><strong>Taille : </strong>%dm</p>
+            </div>
+            </div>';
+        $html = '';
+        foreach ($team as $member) {
+            $html .= sprintf($pattern, ($member['female'] ? 'girls' : 'boys'), $member['fname'], 20, $member['size']);
+        }
+        echo $html;
+        ?>
     </section>
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
