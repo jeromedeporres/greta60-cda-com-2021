@@ -76,7 +76,7 @@
                         </div>
                         <div class="form-group">
                             <label for="pass">Mot de passe</label>
-                            <input type="password" class="form-control" id="pass" name="pass" pattern="[A-Za-z0-9]{8,}" required>
+                            <input type="password" class="form-control" id="pass" name="pass" pattern="[A-Za-z0-9_$]{8,}" required>
                         </div>
                     </div>
                     <div class="modal-footer">
