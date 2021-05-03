@@ -44,5 +44,7 @@ SELECT *
 FROM users
 ;
 
+
+
 SHOW TABLES
 ;
