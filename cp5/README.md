@@ -4,7 +4,7 @@
 
 ## Description
 
-Petit projet "fil rouge" réalisé du **6 avril au 5 mai 2021** avec l'équipe des apprenants du cursus CDA#3, sur le site de Compiègne. Il s'agit d'un petit projet mettant en oeuvre :
+Projet "fil rouge" réalisé du **6 avril au 5 mai 2021** avec l'équipe des apprenants du cursus CDA#3, sur le site de Compiègne. Il s'agit d'un petit projet mettant en oeuvre :
 1. Une page d'accueil intégrant un formulaire d'inscription et un formulaire de connexion via PDO (index.php)
 2. Une classe Animal et sa classe fille Human (initiation POO)
 3. Une classe Database et sa classe fille Model (connexion à une BDD en PDO et CRUD)
